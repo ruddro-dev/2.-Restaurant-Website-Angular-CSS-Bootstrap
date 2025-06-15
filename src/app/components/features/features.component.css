@@ -1,0 +1,63 @@
+/* Features section */
+.features {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+.feature img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+.feature_content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.feature_content p {
+    color: #666;
+    font-size: 16px;
+}
+
+.feature:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.devider {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+@media (max-width: 786px) {
+    .features {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+    }
+}
